@@ -1,3 +1,141 @@
-body{
-    background: lightcoral;
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+/* ---- element styles */
+  img:hover{
+    opacity: .7;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
 }
+
+  /* ---- typography ---- */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+  h1 {}
+  
+  h2 {}
+  
+  h3 {}
+
+  a{
+    color: orange; 
+    text-decoration: none;
+ }
+
+ a:hover{
+    color: violet;
+}
+  
+  /* ---- layout ---- */
+  
+  .main-header {
+  
+  }
+  
+  .main-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+  }
+  
+  .container {
+    margin: 0 20px;
+    max-width: 960px;
+    border: 1px solid black;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  section:nth-of-type(even){
+      background: #ececec
+  }
+
+  .page-header{
+    background: black;
+    color: whitesmoke;
+}
+
+.page-header a{
+    color: purple;
+}
+
+.page-header a:hover{
+    color: paleturquoise;
+}
+
+.inline-list li{
+    display: inline-block;
+}
+
+  
+  /* ---- components ---- */
+  
+  
+  /* ---- header ----*/
+
+  .page-header h1{
+      font-size: 1em;
+  }
+  
+  /* ---- section ---- */
+  
+  section#portfolio {
+    // ...
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .page-header{
+        background: aqua;
+        color: black;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+      .container{
+          margin: 0 auto;
+      }
+      .page-header h1{
+          font-size: 3em;
+      }
+      .work-list li{
+        width: 25%;
+    }
+  }
+
+  
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  }
+  
+
+
+
+
+
+
+
+
